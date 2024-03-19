@@ -1,43 +1,38 @@
-# Qaution - Redirect Tracker
+# Qaution
 
-Meet Qaution - your virtual bodyguard against shady URLs! 🕵️‍♂️ Worried about getting bamboozled by sneaky redirects? Fear not! Our tracker's got your back, keeping tabs on every twist and turn a URL takes, like a trusty sidekick in the wild web. It spills the beans on each redirect in real-time, so you know exactly what you're getting into. No more surprises! Whether it's a harmless detour or a potential online booby trap, our Redirect Tracker spills the tea, making sure you reach your final destination unscathed. Stay savvy, stay safe with our Redirect Tracker!
+## Project Overview
+
+Qaution is a centralized cybersecurity platform designed to provide a comprehensive set of cybersecurity services. The platform integrates various tools and resources, including redirect tracking, malicious file checking, IP reputation checking, SSL certificate validation, and detailed information on cybersecurity norms and regulations. Our goal is to empower users, both businesses and individuals, to enhance their cybersecurity posture, mitigate risks, and ensure compliance with industry standards.
+
+## Features
+
+- **Redirect Tracking:** Monitor and analyze URL redirections in real-time.
+- **Malicious File Checking:** Scan files for malware, viruses, or other malicious content.
+- **IP Reputation Checker:** Assess the reputation of IP addresses for potential threats.
+- **SSL Certificate Checker:** Verify the security of SSL certificates for secure connections.
+- **Cybersecurity Norms Information:** Access detailed information on various cybersecurity norms and regulations.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-* Node.js
-* NextJS
-* React
+- Ensure you have [Node.js](https://nodejs.org/) installed.
+- Clone this repository to your local machine.
 
-### Installing
+### Installation
 
-```
-npm install
-npm run dev
-```
+1. Navigate to the project directory.
+2. Run `npm install` to install dependencies.
 
-## Deployment
+### Usage
 
-Vercel can be used to deploy this project.
-
-## Built With
-
-* [TailwindCSS](https://tailwindcss.com/) - CSS Framework
-* [NextJS](https://nextjs.org/) - React Framework
+- Configure API keys and environment variables as needed.
+- Run the application using `npm start`.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+We welcome contributions! If you have suggestions, bug reports, or want to contribute code, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-## Authors
+## License
 
-* **Mehul Pathak** - [Mehul](https://github.com/m3hu1)
-* **Aryan Niranjan** - [Aryan](https://github.com/aryannir)
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used!
-* Inspired from Redirect Detective.
+This project is licensed under the [MIT License](LICENSE.md).
