@@ -9,12 +9,12 @@ const terms = () => {
             Terms And Conditions
           </h1>
           <p className="text-white text-center">
-            Welcome to LinkRoute!<br></br>
+            Welcome to Qaution!<br></br>
             These terms and conditions outline the rules and regulations for the
-            use of LinkRoute's Website, located at
-            https://linkroute.vercel.app/. By accessing this website we assume
+            use of Qaution's Website, located at
+            https://Qaution.vercel.app/. By accessing this website we assume
             you accept these terms and conditions. Do not continue to use
-            LinkRoute if you do not agree to take all of the terms and
+            Qaution if you do not agree to take all of the terms and
             conditions stated on this page. The following terminology applies to
             these Terms and Conditions, Privacy Statement and Disclaimer Notice
             and all Agreements: "Client", "You" and "Your" refers to you, the
@@ -40,8 +40,8 @@ const terms = () => {
             Cookies
           </h1>
           <p className="text-white text-center">
-            We employ the use of cookies. By accessing LinkRoute, you agreed to
-            use cookies in agreement with the LinkRoute's Privacy Policy. Most
+            We employ the use of cookies. By accessing Qaution, you agreed to
+            use cookies in agreement with the Qaution's Privacy Policy. Most
             interactive websites use cookies to let us retrieve the user's
             details for each visit. Cookies are used by our website to enable
             the functionality of certain areas to make it easier for people
@@ -57,31 +57,31 @@ const terms = () => {
             License
           </h1>
           <p className="text-white text-center">
-            Unless otherwise stated, LinkRoute and/or its licensors own the
-            intellectual property rights for all material on LinkRoute. All
+            Unless otherwise stated, Qaution and/or its licensors own the
+            intellectual property rights for all material on Qaution. All
             intellectual property rights are reserved. You may access this from
-            LinkRoute for your own personal use subjected to restrictions set in
+            Qaution for your own personal use subjected to restrictions set in
             these terms and conditions.<br></br>
             <br></br>
             You must not:
-            <li>Republish material from LinkRoute</li>
-            <li>Sell, rent or sub-license material from LinkRoute</li>
-            <li>Reproduce, duplicate or copy material from LinkRoute</li>
-            <li>Redistribute content from LinkRoute</li>
+            <li>Republish material from Qaution</li>
+            <li>Sell, rent or sub-license material from Qaution</li>
+            <li>Reproduce, duplicate or copy material from Qaution</li>
+            <li>Redistribute content from Qaution</li>
             <br></br>
             This Agreement shall begin on the date hereof. Parts of this website
             offer an opportunity for users to post and exchange opinions and
-            information in certain areas of the website. LinkRoute does not
+            information in certain areas of the website. Qaution does not
             filter, edit, publish or review Comments prior to their presence on
             the website. Comments do not reflect the views and opinions of
-            LinkRoute,its agents and/or affiliates. Comments reflect the views
+            Qaution,its agents and/or affiliates. Comments reflect the views
             and opinions of the person who post their views and opinions. To the
-            extent permitted by applicable laws, LinkRoute shall not be liable
+            extent permitted by applicable laws, Qaution shall not be liable
             for the Comments or for any liability, damages or expenses caused
             and/or suffered as a result of any use of and/or posting of and/or
             appearance of the Comments on this website.<br></br>
             <br></br>
-            LinkRoute reserves the right to monitor all Comments and to remove
+            Qaution reserves the right to monitor all Comments and to remove
             any Comments which can be considered inappropriate, offensive or
             causes breach of these Terms and Conditions.<br></br>
             <br></br>

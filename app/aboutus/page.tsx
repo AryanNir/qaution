@@ -24,8 +24,8 @@ const aboutus = () => {
             About Qaution
           </h1>
           <p className="text-white-800">
-            Welcome to LinkRoute, your go-to solution for comprehensive and
-            efficient redirect tracking! At LinkRoute, we understand the
+            Welcome to Qaution, your go-to solution for comprehensive and
+            efficient redirect tracking! At Qaution, we understand the
             importance of managing and analyzing redirects for your links, and
             we're here to simplify the process.
           </p>
@@ -49,7 +49,7 @@ const aboutus = () => {
             What does it do?
           </h1>
           <h2 className="smXheading1 heading4 text-white-800 !font-bold text-center">
-            Our website, LinkRoute, is a comprehensive redirect tracking tool
+            Our website, Qaution, is a comprehensive redirect tracking tool
             that can help you:
           </h2>
           <br></br>

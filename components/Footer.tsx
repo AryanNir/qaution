@@ -6,7 +6,7 @@ const Footer = () => {
       <p className="hidden sm:inline">
         Copyright © 2024 Qaution | All Rights Reserved
       </p>
-      <p className="sm:hidden">© 2024 LinkRoute.</p>
+      <p className="sm:hidden">© 2024 Qaution.</p>
 
       <div className="flex gap-x-9">
         <Link href="/" className="hidden sm:inline">

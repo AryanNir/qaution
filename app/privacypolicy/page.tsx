@@ -6,13 +6,13 @@ const privacy = () => {
       <section className="nav-padding w-full">
         <div className="flex-center relative min-h-[274px] w-full flex-col rounded-xl bg-cover bg-center text-center">
           <h1 className="smXheading1 heading2 mb-6 text-center text-gradient_blue-purple">
-          LinkRoute's Privacy Statement
+          Qaution's Privacy Statement
           </h1>
           <h2 className="smXheading1 heading4 text-white font-bold text-center">
           Last Updated: December 2, 2023
           </h2><br></br>
           <p className="text-white text-center">
-            Thank you for visiting LinkRoute. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your information when you use our website.
+            Thank you for visiting Qaution. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your information when you use our website.
           </p>
           <br></br><br></br><br></br>
           <h1 className="smXheading1 heading2 mb-6 text-center text-gradient_blue-purple">
@@ -51,7 +51,7 @@ const privacy = () => {
           <p className='text-white text-center'>
           • <b>With your consent:</b> We may share your personal information with third parties if you consent to us doing so.<br></br>
           • <b>To service providers:</b> We may share your personal information with third-party service providers who help us operate our website and provide our services. These service providers are contractually obligated to protect your personal information and to use it only for the purposes for which we have disclosed it to them.<br></br>
-          • <b>To comply with law:</b> We may share your personal information if we are required to do so by law or in the good faith belief that such action is necessary to comply with the law or to protect the rights or property of LinkRoute.
+          • <b>To comply with law:</b> We may share your personal information if we are required to do so by law or in the good faith belief that such action is necessary to comply with the law or to protect the rights or property of Qaution.
           </p>
           <br></br><br></br><br></br>
           <h1 className="smXheading1 heading2 mb-6 text-center text-gradient_blue-purple">
