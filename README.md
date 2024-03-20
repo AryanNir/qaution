@@ -22,12 +22,12 @@ Qaution is a centralized cybersecurity platform designed to provide a comprehens
 ### Installation
 
 1. Navigate to the project directory.
-2. Run `npm install` to install dependencies.
+2. Run `sudo npm install` to install dependencies.
 
 ### Usage
 
 - Configure API keys and environment variables as needed.
-- Run the application using `npm start`.
+- Run the application using `sudo npm run dev`.
 
 ## Contributing
 
