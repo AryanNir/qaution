@@ -9,7 +9,7 @@ const privacy = () => {
           Qaution's Privacy Statement
           </h1>
           <h2 className="smXheading1 heading4 text-white font-bold text-center">
-          Last Updated: December 2, 2023
+          Last Updated: March 25, 2024
           </h2><br></br>
           <p className="text-white text-center">
             Thank you for visiting Qaution. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your information when you use our website.
