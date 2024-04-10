@@ -1,7 +1,10 @@
 #/api/api.py
-from fastapi import FastAPI
+from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
 import requests
+import os
+
+api_key = os.getenv("API_KEY")
 
 app = FastAPI()
 
@@ -31,3 +34,17 @@ def check_redirects(url: str):
         "status_code": final_status_code,
         "redirects": redirects
     }
+
+@app.get("/check-ip-reputation")
+def check_ip_reputation(ip: str, x_key: str = Header(None)):
+    try:
+        if x_key != api_key:
+            return {"error": "Invalid API key"}
+        
+        response = requests.get(f"https://api.abuseipdb.com/api/v2/check?ipAddress={ip}", 
+                                headers={"Key": api_key, 
+                                         "Accept": "application/json"})
+        data = response.json()
+        return data
+    except Exception as e:
+        return {"error": str(e)}
