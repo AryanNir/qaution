@@ -8,7 +8,7 @@ const Services = () => {
         <Link href="/redirect" className="hidden sm:inline">
           Redirect Tracker
         </Link>
-        <Link href="/ip" className="hidden sm:inline">
+        <Link href="/iprep" className="hidden sm:inline">
             IP Rep
         </Link>
         <Link href="/privacypolicy" className="hidden sm:inline">
