@@ -9,18 +9,15 @@ export default function Home() {
 
   const handleSearchFormSubmit = async (ip: string) => {
     try {
-      // const response = await fetch(
-      //   `https://redirect-tracker-api.onrender.com/check-ip-reputation?ip=${ip}`,
-      //   {
-      //     headers: {
-      //       "Key": "44537bf504d736ece21c79b60c23a8bb2254d1508e255501d29139194b0fd4774074afed10c5192e",
-      //       "Accept": "application/json"
-      //     }
-      //   }
-      // );
-      // const response = await fetch(`/api/check-ip-reputation?ip=${ip}`);
-      // const response = await fetch(`/api/check-ip-reputation?ip=${ip}`);
-      const response = await fetch(`https://redirect-tracker-api.onrender.com/check-ip-reputation?ip=${ip}`);
+      const response = await fetch(
+        `https://redirect-tracker-api.onrender.com/check-ip-reputation?ip=${ip}`,
+        {
+          headers: {
+            "Key": "44537bf504d736ece21c79b60c23a8bb2254d1508e255501d29139194b0fd4774074afed10c5192e",
+            "Accept": "application/json"
+          }
+        }
+      );
       const data = await response.json();
       console.log(data);
       setIpRepData(data);
@@ -43,7 +40,6 @@ export default function Home() {
             </h1>
           </div>
           <SearchForm onSubmit={handleSearchFormSubmit} />
-          {/* Pass ipRepData state to IpRepData component */}
           <IpRepData ipRepData={ipRepData} />
         </section>
       </main>
