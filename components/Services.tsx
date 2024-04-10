@@ -19,8 +19,12 @@ const Services = () => {
         </Link>
         <Link href="/privacypolicy" className="hidden sm:inline">
           SSL Certificate
-        </Link><Link href="/privacypolicy" className="hidden sm:inline">
+        </Link>
+        <Link href="/privacypolicy" className="hidden sm:inline">
           Python Package Checker
+        </Link>
+        <Link href="/privacypolicy" className="hidden sm:inline">
+          CyberSec Norms
         </Link>
       </div>
     </footer>
