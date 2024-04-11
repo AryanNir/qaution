@@ -25,9 +25,11 @@ const aboutus = () => {
           </h1>
           <p className="text-white-800">
             Welcome to Qaution, your go-to solution for comprehensive and
-            efficient redirect tracking! At Qaution, we understand the
-            importance of managing and analyzing redirects for your links, and
-            we're here to simplify the process.
+            efficient cybersecurity services. Qaution is a centralized
+            cybersecurity tool created to make online security easier and more
+            effective for both businesses and individuals. It offers vital
+            services like redirect tracking, IP reputation checking, SSL
+            verification, and others, etc.
           </p>
         </div>
         <div className="text-center">
@@ -35,10 +37,11 @@ const aboutus = () => {
             Our Mission
           </h1>
           <p className="text-white-800">
-            Our mission is to provide website owners with the tools they need to
-            manage their redirects with confidence. We believe that everyone
-            should have access to easy-to-use, reliable tools that can help them
-            optimize their website for success.
+            At Qaution, we're on a mission to simplify and strengthen online
+            security for businesses and individuals alike. Our centralized
+            cybersecurity tool offers essential services like redirect tracking,
+            IP reputation checking, and SSL verification, empowering users to
+            navigate the digital landscape with confidence.
           </p>
         </div>
         <br></br>
@@ -49,15 +52,13 @@ const aboutus = () => {
             What does it do?
           </h1>
           <h2 className="smXheading1 heading4 text-white-800 !font-bold text-center">
-            Our website, Qaution, is a comprehensive redirect tracking tool
-            that can help you:
+            Our website, Qaution, is a centralized cybersecurity platform that:
           </h2>
           <br></br>
           <p className="text-white-800 text-center">
-            •Track all of your website's redirects, including 301, 302, 200
-            redirects, and more.<br></br>
-            •Allows you to directly go to the destination URL of the redirect
-            after the process.
+            •Offers vital services like redirect tracking, IP reputation
+            checking, SSL verification, and others.<br></br>
+            •Has a user-friendly interface and a full range of tools.
           </p>
           <br></br>
           <br></br>
@@ -66,11 +67,9 @@ const aboutus = () => {
           </h2>
           <br></br>
           <p className="text-white-800 text-center">
-            •Identify broken redirects and chains of redirects.<br></br>
-            •View detailed information about each redirect, including the source
-            URL, destination URL, and status code.<br></br>
-            •Export redirect data to a CSV file.<br></br>
-            •Monitor redirect changes over time.
+            •Add more services to the platform.<br></br>
+            •Add a cybersecurity newsletter that provides latest news in the
+            cybersecurity field.
           </p>
         </div>
         <br></br>
