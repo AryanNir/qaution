@@ -56,7 +56,7 @@ const Navbar = () => {
           <ul className="flex-center gap-x-3 hidden md:flex md:gap-x-10">
             <ShieldCheck size={28} color="#ffffff" />
             <li className="text-xl text-white-800 glow-effect">
-              <Link href="/iprep">SSL Checker</Link>
+              <Link href="/sslcheck">SSL Checker</Link>
             </li>
           </ul>
         </Sidebar>
