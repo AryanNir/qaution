@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
-import { AlignLeft, Home, ExternalLink, Link2 } from "lucide-react";
+import { AlignLeft, Home, ExternalLink, Link2, ShieldCheck } from "lucide-react";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -46,14 +46,19 @@ const Navbar = () => {
             </li>
           </ul>
           <br></br>
-          <ul className="flex gap-x-3 hidden md:flex md:gap-x-10">
-            <Link2 size={34} color="#fdfcfc" />
+          <ul className="flex-center gap-x-3 hidden md:flex md:gap-x-10">
+            <Link2 size={50} color="#fdfcfc" />
             <li className="text-xl text-white-800 glow-effect">
-              <Link href="/iprep">IP Rep Checker</Link>
+              <Link href="/iprep">IP Reputation Checker</Link>
             </li>
           </ul>
-          {/* <SidebarItem text="Redirect Tracker" />
-          <SidebarItem text="IP Reputation Checker" /> */}
+          <br></br>
+          <ul className="flex-center gap-x-3 hidden md:flex md:gap-x-10">
+            <ShieldCheck size={28} color="#ffffff" />
+            <li className="text-xl text-white-800 glow-effect">
+              <Link href="/iprep">SSL Checker</Link>
+            </li>
+          </ul>
         </Sidebar>
       )}
     </div>
