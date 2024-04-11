@@ -10,10 +10,6 @@ export default function Home() {
 
   const handleSearchFormSubmit = async (url: string) => {
     try {
-      // const response = await fetch(`http://localhost:8000/check-redirects?url=${url}`);
-      // const response = await fetch(
-      //   `https://Qautionapi-66be0d9c6a6f.herokuapp.com/check-redirects?url=${url}`
-      // );
       const response = await fetch(
         `https://redirect-tracker-api.onrender.com/check-redirects?url=${url}`
       );

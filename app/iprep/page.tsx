@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import IpRepData from "@/components/IpRepData";
-import SearchForm from "@/components/SearchForm";
+import SearchForm2 from "@/components/SearchForm2";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
               <span className="sm:hidden">Qaution</span>
             </h1>
           </div>
-          <SearchForm onSubmit={handleSearchFormSubmit} />
+          <SearchForm2 onSubmit={handleSearchFormSubmit} />
           <IpRepData ipRepData={ipRepData} />
         </section>
       </main>
