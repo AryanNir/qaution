@@ -14,10 +14,10 @@ const Services = () => {
         <Link href="/privacypolicy" className="hidden sm:inline">
           Latest CyberSec News
         </Link>
-        <Link href="/privacypolicy" className="hidden sm:inline">
+        <Link href="/viruscheck" className="hidden sm:inline">
           Malicious File Checker
         </Link>
-        <Link href="/privacypolicy" className="hidden sm:inline">
+        <Link href="/sslcheck" className="hidden sm:inline">
           SSL Certificate
         </Link>
         <Link href="/privacypolicy" className="hidden sm:inline">
