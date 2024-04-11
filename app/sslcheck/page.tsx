@@ -27,7 +27,7 @@ const SSLCheckerPage = () => {
         <section className="nav-padding w-full">
           <div className="glow-effect flex-center relative min-h-[274px] w-full flex-col rounded-xl bg-banner bg-cover bg-center text-center">
             <h1 className="smXheading1 heading2 mb-6 text-center text-white">
-              SSL Checker
+              Qaution - SSL Checker
             </h1>
           </div>
           <div className="flex flex-col items-center mt-10">
