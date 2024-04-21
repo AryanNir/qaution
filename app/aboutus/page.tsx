@@ -13,6 +13,11 @@ const features = [
     description: "E22CSEU1250",
     link: "https://github.com/Aryannir",
   },
+  {
+    title: "Varun Pathak",
+    description: "E22CSEU1257",
+    link: "https://github.com/varunpathak1257",
+  }
 ];
 
 const aboutus = () => {
@@ -81,7 +86,7 @@ const aboutus = () => {
               Our Team
             </h1>
           </div>
-          <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-20 px-5 md:grid-cols-2 xl:px-0">
+          <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-20 px-5 md:grid-cols-3 xl:px-0">
             {features.map(({ title, description, large, link }) => (
               <Card
                 key={title}
