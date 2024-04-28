@@ -8,8 +8,14 @@ const SSLCheckerPage = () => {
   const [sslInfo, setSSLInfo] = useState(null);
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSSLCheck = async () => {
+    if (!url.trim()) {
+      setError("Please enter an URL.");
+      setSSLInfo(null);
+      return;
+    }
     setIsLoading(true);
     try {
       const response = await fetch(
@@ -17,6 +23,7 @@ const SSLCheckerPage = () => {
       );
       const data = await response.json();
       setSSLInfo(data);
+      setError("");
     } catch (error) {
       console.error(error);
       setSSLInfo(null);
@@ -49,6 +56,7 @@ const SSLCheckerPage = () => {
               Check SSL
             </button>
           </div>
+          {error && <p className="text-red-500 text-center">{error}</p>}
           <SSLChecker sslInfo={sslInfo} isLoading={isLoading} />
         </section>
       </main>

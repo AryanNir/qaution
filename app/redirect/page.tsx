@@ -7,18 +7,27 @@ import Footer from "@/components/Footer";
 const Home = () => {
   const [redirectData, setRedirectData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSearchFormSubmit = async (url: string) => {
+    if (!url.trim()) {
+      setError("Please enter an URL.");
+      setRedirectData(null);
+      return;
+    }
     setIsLoading(true);
     try {
+      const normalizedUrl = url.startsWith("http") ? url : `https://${url}`;
       const response = await fetch(
-        `https://redirect-tracker-api.onrender.com/check-redirects?url=${url}`
+        `https://redirect-tracker-api.onrender.com/check-redirects?url=${normalizedUrl}`
       );
       const data = await response.json();
       setRedirectData(data);
+      setError("");
     } catch (error) {
       console.error(error);
       setRedirectData(null);
+      setError("Please enter a valid URL.");
     } finally {
       setIsLoading(false);
     }
@@ -39,6 +48,7 @@ const Home = () => {
             </h1>
           </div>
           <SearchForm onSubmit={handleSearchFormSubmit} />
+          {error && <p className="text-red-500 text-center">{error}</p>}
           <RedirectTracker redirectData={redirectData} isLoading={isLoading} />
         </section>
       </main>

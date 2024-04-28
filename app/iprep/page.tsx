@@ -7,8 +7,14 @@ import Footer from "@/components/Footer";
 export default function Home() {
   const [ipRepData, setIpRepData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSearchFormSubmit = async (ip: string) => {
+    if (!ip.trim()) {
+      setError("Please enter an IP address.");
+      setIpRepData(null);
+      return;
+    }
     setIsLoading(true);
     try {
       const response = await fetch(
@@ -21,11 +27,20 @@ export default function Home() {
         }
       );
       const data = await response.json();
-      console.log(data);
-      setIpRepData(data);
+      // console.log(data);
+      if (data && data.data && data.data.ipAddress) {
+        setIpRepData(data);
+        setError("");
+      } else {
+        setError("Please enter a valid IP address.");
+        setIpRepData(null);
+      }
+      // setIpRepData(data);
+      // setError("");
     } catch (error) {
       console.error(error);
       setIpRepData(null);
+      setError("An error occurred. Please try again later.");
     } finally {
       setIsLoading(false);
     }
@@ -44,6 +59,7 @@ export default function Home() {
             </h1>
           </div>
           <SearchForm2 onSubmit={handleSearchFormSubmit} />
+          {error && <p className="text-red-500 text-center">{error}</p>}
           <IpRepData ipRepData={ipRepData} isLoading={isLoading}/>
         </section>
       </main>
