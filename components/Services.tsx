@@ -48,8 +48,8 @@ const Services = () => {
         <Link href="/sslcheck" className="block">
           SSL Certificate Checker
         </Link>
-        <Link href="/viruscheck" className="block">
-          Norms
+        <Link href="/norms" className="block">
+          CyberSecurity Norms
         </Link>
       </div>
     </footer>
