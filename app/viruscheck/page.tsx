@@ -4,23 +4,37 @@ import Lottie from "react-lottie";
 import Footer from "@/components/Footer";
 
 const SafeSurfing = () => {
-  const [animationData, setAnimationData] = useState(null);
+  const [animationData1, setAnimationData1] = useState(null);
+  const [animationData2, setAnimationData2] = useState(null);
   const [isAnimationOnLeft, setIsAnimationOnLeft] = useState(true);
 
   useEffect(() => {
-    const fetchAnimationData = async () => {
+    const fetchAnimationData1 = async () => {
       try {
         const response = await fetch(
           "https://lottie.host/5a16ce28-b373-4fd0-a371-64701b446c93/Cu7BUJWwG8.json"
         );
         const data = await response.json();
-        setAnimationData(data);
+        setAnimationData1(data);
       } catch (error) {
         console.error("Error fetching animation data:", error);
       }
     };
 
-    fetchAnimationData();
+    const fetchAnimationData2 = async () => {
+      try {
+        const response = await fetch(
+          "https://lottie.host/2ebbdb3b-117d-4f6d-be3f-44ffae1a5238/dPy8AqyrKf.json"
+        );
+        const data = await response.json();
+        setAnimationData2(data);
+      } catch (error) {
+        console.error("Error fetching animation data:", error);
+      }
+    };
+
+    fetchAnimationData1();
+    fetchAnimationData2();
   }, []);
 
   const toggleLayout = () => {
@@ -33,13 +47,13 @@ const SafeSurfing = () => {
         <section className="w-full">
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className={`w-full md:w-1/2 order-${isAnimationOnLeft ? 1 : 2}`}>
-              {animationData && (
+              {animationData1 && (
                 <div className="lottie-container" style={{ backgroundColor: "transparent" }}>
                   <Lottie
                     options={{
                       loop: true,
                       autoplay: true,
-                      animationData: animationData,
+                      animationData: animationData1,
                       rendererSettings: {
                         preserveAspectRatio: "xMidYMid slice",
                       },
@@ -65,36 +79,36 @@ const SafeSurfing = () => {
           </div>
         </section>
         
-        {/* Temporary Text and GIF for Reference */}
+        {/* Second Section with Different GIF */}
         <section className="w-full mt-12">
           <div className="flex flex-wrap items-center justify-center md:justify-between">
-            <div className={`text-white w-full md:w-1/2 px-6 md:px-0 order-${isAnimationOnLeft ? 2 : 1}`}>
+            <div className={`text-white w-full md:w-1/2 px-6 md:px-0 order-${isAnimationOnLeft ? 1 : 2}`}>
               <h2 className="text-2xl text-white font-semibold mb-4">Temporary Text:</h2>
               <p className="text-white mb-6">
                 This is a temporary text section for reference purposes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at feugiat odio. Vivamus ultrices, dui vitae ultrices dapibus, velit mi mattis turpis, vel luctus metus libero sit amet dolor.
               </p>
             </div>
-            <div className={`w-full md:w-1/2 order-${isAnimationOnLeft ? 1 : 2}`}>
-              {animationData && (
+            <div className={`w-full md:w-1/2 order-${isAnimationOnLeft ? 2 : 1}`}>
+              {animationData2 && (
                 <div className="lottie-container" style={{ backgroundColor: "transparent" }}>
                   <Lottie
                     options={{
                       loop: true,
                       autoplay: true,
-                      animationData: animationData,
+                      animationData: animationData2,
                       rendererSettings: {
                         preserveAspectRatio: "xMidYMid slice",
                       },
                     }}
-                    height={300}
-                    width={300}
+                    height={450}
+                    width={450}
                   />
                 </div>
               )}
             </div>
           </div>
         </section>
-        {/* End of Temporary Text and GIF for Reference */}
+        {/* End of Second Section */}
 
       </main>
       <Footer />
