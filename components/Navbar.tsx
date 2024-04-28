@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className="flex-center gap-x-3 hidden md:flex md:gap-x-10 px-10">
           <ul>
-            <li className="text-xl text-gradient_blue-purple !font-bold glow-effect style={{ whiteSpace: 'nowrap' }}">
+            <li className="text-xl text-gradient_blue-purple !font-bold glow-effect" style={{ whiteSpace: 'nowrap' }}>
               <Link href="/aboutus">About Us</Link>
             </li>
           </ul>
