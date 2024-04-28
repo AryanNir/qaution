@@ -7,8 +7,10 @@ import Footer from "@/components/Footer";
 const SSLCheckerPage = () => {
   const [sslInfo, setSSLInfo] = useState(null);
   const [url, setUrl] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSSLCheck = async () => {
+    setIsLoading(true);
     try {
       const response = await fetch(
         `https://redirect-tracker-api.onrender.com/check-ssl?url=${url}`
@@ -18,6 +20,8 @@ const SSLCheckerPage = () => {
     } catch (error) {
       console.error(error);
       setSSLInfo(null);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -45,7 +49,7 @@ const SSLCheckerPage = () => {
               Check SSL
             </button>
           </div>
-          <SSLChecker sslInfo={sslInfo} />
+          <SSLChecker sslInfo={sslInfo} isLoading={isLoading} />
         </section>
       </main>
       <Footer />

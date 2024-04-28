@@ -1,6 +1,7 @@
 // SSLChecker.tsx
 
 import React from "react";
+import Lottie from "react-lottie";
 
 interface SSLCheckerProps {
   sslInfo: {
@@ -20,12 +21,30 @@ interface SSLCheckerProps {
     ocsp_uri: string;
     ca_issuers_uri: string;
   } | null;
+  isLoading: boolean;
 }
+const loadingAnimationOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: require("loading2.json"),
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
-const SSLChecker: React.FC<SSLCheckerProps> = ({ sslInfo }) => {
+const SSLChecker: React.FC<SSLCheckerProps> = ({ sslInfo, isLoading }) => {
   return (
     <div className="redirect-tracker-container">
-      {sslInfo && (
+      {isLoading && (
+        <div className="loading-animation">
+          <Lottie
+            options={loadingAnimationOptions}
+            height={300}
+            width={300}
+          />
+        </div>
+      )}
+      {sslInfo && !isLoading && (
         <div className="mt-10 ssl-results text-center">
           <h3 className="text-gradient_purple-blue font-extrabold glow-effect-animate underline">
             SSL Certificate Information

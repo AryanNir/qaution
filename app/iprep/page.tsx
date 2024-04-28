@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const [ipRepData, setIpRepData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSearchFormSubmit = async (ip: string) => {
+    setIsLoading(true);
     try {
       const response = await fetch(
         `https://redirect-tracker-api.onrender.com/check-ip-reputation?ip=${ip}`,
@@ -24,6 +26,8 @@ export default function Home() {
     } catch (error) {
       console.error(error);
       setIpRepData(null);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -40,7 +44,7 @@ export default function Home() {
             </h1>
           </div>
           <SearchForm2 onSubmit={handleSearchFormSubmit} />
-          <IpRepData ipRepData={ipRepData} />
+          <IpRepData ipRepData={ipRepData} isLoading={isLoading}/>
         </section>
       </main>
       <Footer />

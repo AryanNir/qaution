@@ -1,4 +1,5 @@
 import React from "react";
+import Lottie from "react-lottie";
 
 interface RedirectTrackerProps {
   redirectData?: {
@@ -9,14 +10,31 @@ interface RedirectTrackerProps {
       status_code: number;
     }[];
   } | null;
+  isLoading: boolean;
 }
 
-export default function RedirectTracker({
-  redirectData,
-}: RedirectTrackerProps) {
+const loadingAnimationOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: require("loading2.json"),
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
+const RedirectTracker = ({ redirectData, isLoading }: RedirectTrackerProps) => {
   return (
     <div className="redirect-tracker-container">
-      {redirectData && (
+      {isLoading && (
+        <div className="loading-animation">
+          <Lottie
+            options={loadingAnimationOptions}
+            height={300}
+            width={300}
+          />
+        </div>
+      )}
+      {redirectData && !isLoading && (
         <div className="mt-10 redirect-results text-center">
           <h3 className="text-gradient_purple-blue font-extrabold glow-effect-animate underline">
             <a href={redirectData.url}>Final URL: {redirectData.url}</a>
@@ -74,4 +92,6 @@ export default function RedirectTracker({
       )}
     </div>
   );
-}
+};
+
+export default RedirectTracker;

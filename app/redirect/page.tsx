@@ -1,14 +1,15 @@
-"use client";
-
+"use client"
 import React, { useState } from "react";
 import RedirectTracker from "@/components/RedirectTracker";
 import SearchForm from "@/components/SearchForm";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+const Home = () => {
   const [redirectData, setRedirectData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSearchFormSubmit = async (url: string) => {
+    setIsLoading(true);
     try {
       const response = await fetch(
         `https://redirect-tracker-api.onrender.com/check-redirects?url=${url}`
@@ -18,6 +19,8 @@ export default function Home() {
     } catch (error) {
       console.error(error);
       setRedirectData(null);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -36,10 +39,12 @@ export default function Home() {
             </h1>
           </div>
           <SearchForm onSubmit={handleSearchFormSubmit} />
-          <RedirectTracker redirectData={redirectData} />
+          <RedirectTracker redirectData={redirectData} isLoading={isLoading} />
         </section>
       </main>
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;

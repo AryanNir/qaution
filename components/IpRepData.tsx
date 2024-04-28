@@ -1,4 +1,5 @@
 import React from "react";
+import Lottie from "react-lottie";
 
 interface IpRepDataProps {
   ipRepData?: {
@@ -19,12 +20,30 @@ interface IpRepDataProps {
       lastReportedAt: string | null;
     };
   } | null;
+  isLoading: boolean;
 }
+const loadingAnimationOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: require("loading2.json"),
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
-const IpRepData: React.FC<IpRepDataProps> = ({ ipRepData }) => {
+const IpRepData: React.FC<IpRepDataProps> = ({ ipRepData, isLoading }) => {
   return (
     <div className="ip-rep-data-container">
-      {ipRepData && (
+      {isLoading && (
+        <div className="loading-animation">
+          <Lottie
+            options={loadingAnimationOptions}
+            height={300}
+            width={300}
+          />
+        </div>
+      )}
+      {ipRepData && !isLoading && (
         <div className="mt-10 ip-rep-results text-center">
           <h3 className="text-gradient_purple-blue font-extrabold glow-effect-animate underline">
             IP Address: {ipRepData.data.ipAddress || "N/A"}
