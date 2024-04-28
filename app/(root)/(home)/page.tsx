@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Lottie from "react-lottie";
 import Footer from "@/components/Footer";
-import homeAnimation from "../../../../homepage.json";
+import homeAnimation from "./homepage.json";
 
 export default function Home() {
   return (
