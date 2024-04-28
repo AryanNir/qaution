@@ -1,20 +1,24 @@
-'use client'
+'use client';
 import React, { useState } from "react";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
 import { AlignLeft, Home, ExternalLink, Link2, ShieldCheck } from "lucide-react";
+import Lottie from "react-lottie";
+import cubeAnimation from "../cube.json";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-
 
   return (
     <div>
       <nav className="flex-center sticky top-0 z-50 w-full border-b-2 border-black-200 bg-black-100 py-7 text-white">
         <div className="flex-center px-10 cursor-pointer" onClick={() => setShowSidebar(!showSidebar)}>
-            {showSidebar ? <AlignLeft /> : <AlignLeft />}
-          </div>
+          {showSidebar ? <AlignLeft /> : <AlignLeft />}
+        </div>
         <div className="flex-center mx-auto w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16">
+          <div style={{ width: "50px", marginRight: "10px" }}>
+            <Lottie options={{ loop: true, autoplay: true, animationData: cubeAnimation }} />
+          </div>
           <Link href="/">
             <div className="text-gradient_purple-blue !font-bold text-3xl glow-effect-animate">
               Qaution
