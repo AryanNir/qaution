@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'Qaution',
-  description: 'Open Source Redirect Tracker',
+  description: 'Centralized CyberSecurity Platform',
 }
 
 export default function RootLayout({
