@@ -1,12 +1,10 @@
 'use client';
 import React, { useState } from "react";
-import dynamic from 'next/dynamic';
 import Link from "next/link";
 import Sidebar from "./Sidebar";
 import { AlignLeft, Home, ExternalLink, Link2, ShieldCheck } from "lucide-react";
-// import Lottie from "react-lottie";
+import Lottie from "react-lottie";
 import cubeAnimation from "../cube.json";
-const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
