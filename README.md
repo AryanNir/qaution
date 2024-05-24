@@ -7,7 +7,6 @@ Qaution is a centralized cybersecurity platform designed to provide a comprehens
 ## Features
 
 - **Redirect Tracking:** Monitor and analyze URL redirections in real-time.
-- **Malicious File Checking:** Scan files for malware, viruses, or other malicious content.
 - **IP Reputation Checker:** Assess the reputation of IP addresses for potential threats.
 - **SSL Certificate Checker:** Verify the security of SSL certificates for secure connections.
 - **Cybersecurity Norms Information:** Access detailed information on various cybersecurity norms and regulations.
